@@ -41,6 +41,10 @@ Also I created the Dummy Acme provider object to simulate the calling Acme provi
     ````bash
    composer install
    ````
+5. create env file
+    ````bash
+   cp .env.example .env
+   ````
 5. Run The console Command.
     ````bash
     ./bin/console insurance:quote ACME --file=/data/input.json
