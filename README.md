@@ -45,11 +45,11 @@ Also I created the Dummy Acme provider object to simulate the calling Acme provi
     ````bash
    cp .env.example .env
    ````
-5. Run The console Command.
+6. Run The console Command.
     ````bash
     ./bin/console insurance:quote ACME --file=/data/input.json
    ````
-6. Run the tests.
+7. Run the tests.
    ````bash
    ./vendor/bin/phpunit tests --testdox
     ````
