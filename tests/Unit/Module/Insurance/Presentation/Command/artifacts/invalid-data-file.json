@@ -8,7 +8,7 @@
   "car_registrationDate" :  null,
   "car_version": "00540140903",
   "customer_journey_ok": 1,
-  "driver_birthDate": "2002-06-05",
+  "driver_birthDate": "t",
   "driver_birthPlace": "ESP",
   "driver_birthPlaceMain": "ESP",
   "driver_children": "NO",
