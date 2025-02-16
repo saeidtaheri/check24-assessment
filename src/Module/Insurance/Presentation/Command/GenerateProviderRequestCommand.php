@@ -42,7 +42,7 @@ final class GenerateProviderRequestCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $customerInput = $this->parseCustomerInput($input, $output);
+        $customerInput = $this->makeCustomerInputFromData($input, $output);
 
         if (!$customerInput instanceof CustomerInput) {
             return Command::FAILURE;
@@ -64,7 +64,7 @@ final class GenerateProviderRequestCommand extends Command
      * @param OutputInterface $output
      * @return CustomerInput|int
      */
-    public function parseCustomerInput(InputInterface $input, OutputInterface $output): CustomerInput|int
+    public function makeCustomerInputFromData(InputInterface $input, OutputInterface $output): CustomerInput|int
     {
         $fileExtension = pathinfo($input->getOption('file'), PATHINFO_EXTENSION);
         $filePath = $this->kernel->getProjectDir() . $input->getOption('file');
